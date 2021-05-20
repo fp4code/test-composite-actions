@@ -9,7 +9,7 @@ jobs:
       # https://github.com/actions/checkout/blob/v2/action.yml
       - uses: actions/checkout@v2
       - id: foo
-        uses: fp4code/hello-world-composite-run-steps-action@v6
+        uses: fp4code/hello-world-composite-run-steps-action@v7
         with:
           who_to_greet: 'EG'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
