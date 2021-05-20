@@ -4,7 +4,9 @@ jobs:
   hello_world_job:
     runs-on: ubuntu-latest
     name: A job to say hello
+    # et voici une liste de 3 étapes, 2 uses et un run
     steps:
+      # https://github.com/actions/checkout/blob/v2/action.yml
       - uses: actions/checkout@v2
       - id: foo
         uses: fp4code/hello-world-composite-run-steps-action@v1
