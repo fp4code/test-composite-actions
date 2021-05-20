@@ -11,6 +11,6 @@ jobs:
       - id: foo
         uses: fp4code/hello-world-composite-run-steps-action@v4
         with:
-          who-to-greet: 'EG'
+          who_to_greet: 'EG'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
         shell: bash
